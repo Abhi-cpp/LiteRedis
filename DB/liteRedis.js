@@ -11,7 +11,8 @@ class LiteRedis {
  * @param {number} ttl - Time to live in seconds (optional).
  */
     set(key, value, ttl = 0) {
-        const expireAT = ttl ? Date.now() + ttl * 1000 : null;
+        const expireAT = ttl ? ttl * 1000 : null;
+
         this.store.set(key, value);
         this.key.add(key)
         if (ttl)

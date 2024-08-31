@@ -1,0 +1,11 @@
+{
+  "name": "literedis",
+  "version": "1.0.0",
+  "description": "A fast and light weight redis alternative.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Kumar",
+  "license": "ISC"
+}
